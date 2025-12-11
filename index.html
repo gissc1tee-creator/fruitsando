@@ -31,23 +31,6 @@
 
 
 
-<br>
-<button id="darkModeBtn">Modo Oscuro</button>
-
-<script>
-  const btn = document.getElementById("darkModeBtn");
-
-  btn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-      btn.textContent = "Modo Claro";
-    } else {
-      btn.textContent = "Modo Oscuro";
-    }
-  });
-</script>
-<br>
 
 
 
@@ -84,6 +67,8 @@
 
 </header>
 
+
+
 <br>
 <br>
 
@@ -111,6 +96,23 @@
 </div>
 
 
+<br>
+<button id="darkModeBtn">Modo Oscuro</button>
+
+<script>
+  const btn = document.getElementById("darkModeBtn");
+
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      btn.textContent = "Modo Claro";
+    } else {
+      btn.textContent = "Modo Oscuro";
+    }
+  });
+</script>
+<br>
 
 
 
